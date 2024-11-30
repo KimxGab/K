@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Matching Game</title>
+    <link rel="stylesheet" href="indexStyle.css">
+    <script src="indexScript.js" defer></script>
+</head>
+<body>
+    <header><h1>Pet Matching Game</h1></header>
+    
+    <!-- Draggable container with images of pets -->
+    <div class="draggableContainer">
+        <div class="box" draggable="true" id="box1"><img src="dog.jpeg" alt="Dog" class="petImage"></div>
+        <div class="box" draggable="true" id="box2"><img src="cat.jpeg" alt="Cat" class="petImage"></div>
+        <div class="box" draggable="true" id="box3"><img src="fish.jpeg" alt="Fish" class="petImage"></div>
+        <div class="box" draggable="true" id="box4"><img src="rabbit.jpeg" alt="Rabbit" class="petImage"></div>
+        <div class="box" draggable="true" id="box5"><img src="bird.jpeg" alt="Bird" class="petImage"></div>
+        <div class="box" draggable="true" id="box6"><img src="hamster.jpeg" alt="Hamster" class="petImage"></div>
+        <div class="box" draggable="true" id="box7"><img src="trutle.jpeg" alt="Turtle" class="petImage"></div>
+        <div class="box" draggable="true" id="box8"><img src="parrot.jpeg" alt="Parrot" class="petImage"></div>
+        <div class="box" draggable="true" id="box9"><img src="Guinea.jpeg" alt="Guinea Pig" class="petImage"></div>
+        <div class="box" draggable="true" id="box10"><img src="lizard.jpeg" alt="Lizard" class="petImage"></div>
+    </div>
+    
+    <!-- Droppable container with images of pet zones -->
+    <div class="droppableContainer">
+        <div class="droppable" data-draggable-id="box1"><img src="doghouse.jpeg" alt="Dog House" class="zoneImage"></div>
+        <div class="droppable" data-draggable-id="box2"><img src="cathouse.jpeg" alt="Cat Bed" class="zoneImage"></div>
+        <div class="droppable" data-draggable-id="box3"><img src="fishhouse.jpeg" alt="Fish Tank" class="zoneImage"></div>
+        <div class="droppable" data-draggable-id="box4"><img src="rabbithouse.jpeg" alt="Rabbit Hutch" class="zoneImage"></div>
+        <div class="droppable" data-draggable-id="box5"><img src="birdhouse.jpeg" alt="Bird Cage" class="zoneImage"></div>
+        <div class="droppable" data-draggable-id="box6"><img src="hamsterhouse.jpeg" alt="Hamster Cage" class="zoneImage"></div>
+        <div class="droppable" data-draggable-id="box7"><img src="turtlehouse.jpeg" alt="Turtle Tank" class="zoneImage"></div>
+        <div class="droppable" data-draggable-id="box8"><img src="parrothouse.jpeg" alt="Parrot Cage" class="zoneImage"></div>
+        <div class="droppable" data-draggable-id="box9"><img src="guineapighouse.jpeg" alt="Guinea Pig Cage" class="zoneImage"></div>
+        <div class="droppable" data-draggable-id="box10"><img src="lizardhouse.jpeg" alt="Lizard Habitat" class="zoneImage"></div>
+    </div>
+
+    <div class="game-info">
+        <p id="remarks"></p>
+        <p>Score: <span id="scores">0</span></p>
+    </div>
+</body>
+</html>
